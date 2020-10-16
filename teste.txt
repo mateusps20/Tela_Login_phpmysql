@@ -1,0 +1,27 @@
+[16:12, 13/10/2020] +55 27 99628-6964: CRIAR PEQUENA APLICAÇÃO COM BOOTSTRAP, PHP E MYSQL
+O sistema deve ter login com e-mail e senha (deve ser encriptada), e um link de cadastre-se, que só armazenará nome, e-mail e senha.
+Ao logar o usuário poderá criar produtos (nome, código, preço e quantidade) e eles deverão ser listados, com opção de edição e exclusão.
+
+O código deve ser postado no Github, com as devidas instruções para instalação e execução do projeto.
+[16:12, 13/10/2020] +55 27 99628-6964: Enviar retorno para dev@espacomercado.com com cópia para contato@espacomercado.com
+
+create database projeto_login;
+
+use projeto_login;
+
+query para criar a tabela usuários
+create table usuarios(
+	id_usuario int AUTO_INCREMENT PRIMARY key,
+	nome varchar(30),
+	email varchar(40),
+	senha varchar(32)
+);
+
+query para criar a tabela produtos
+create table produtos(
+	id_produto int AUTO_INCREMENT PRIMARY key,
+	codprod varchar(13),
+	nomeprod varchar(30),
+	preco float(18,2),
+	qte int
+);
